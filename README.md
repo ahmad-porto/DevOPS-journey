@@ -5,4 +5,8 @@ test from windows
 
 test from ubuntu
 
+projects ROADMAP.sh:
+server-stats:
 https://roadmap.sh/projects/server-stats
+
+the project is on ./roadmap.sh-devops/Server-Performance-Stats
