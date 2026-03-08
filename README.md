@@ -24,9 +24,17 @@ DevOPS-journey/
 │   ├── basic_dockerfile/              # Docker fundamentals
 │   │   ├── Dockerfile                 # Basic Alpine Linux container
 │   │   └── README.md                  # Project documentation
-│   └── Server-Performance-Stats/      # Shell scripting project
+│   ├── Server-Performance-Stats/      # Shell scripting project
+│   │   ├── README.md                  # Project documentation
+│   │   └── server-stats.sh            # Performance monitoring script
+│   └── static-site/                   # AWS & Nginx deployment project
 │       ├── README.md                  # Project documentation
-│       └── server-stats.sh            # Performance monitoring script
+│       ├── index.html                 # Landing page
+│       ├── style.css                  # Site styling
+│       ├── logo.png                   # Site assets
+│       ├── example-rsync.sh           # Deployment script template
+│       ├── rsync.sh                   # Deployment script (personalized)
+│       └── your-key.pem     # AWS private key
 ```
 
 ## Projects
@@ -68,6 +76,27 @@ bash server-stats.sh
 
 📖 [View Full Documentation](roadmap.sh-devops/Server-Performance-Stats/README.md)
 
+### 3. Static Site Deployment with Nginx and Rsync
+**Status:** ✅ Complete
+
+A comprehensive AWS EC2 project that demonstrates cloud infrastructure setup, web server configuration, and automated deployment. Deploy a static website to AWS using Nginx and rsync.
+
+- **Skills:** AWS EC2 management, Nginx configuration, Infrastructure automation, Rsync deployment, SSH access, Security groups
+- **Technology:** AWS EC2, Nginx, Rsync, Bash, HTML5, CSS3
+- **Repository:** [static-site/](roadmap.sh-devops/static-site/)
+- **Project URL:** https://roadmap.sh/projects/static-site-server
+
+**Quick Start:**
+```bash
+cd roadmap.sh-devops/static-site
+cp example-rsync.sh rsync.sh
+# Edit rsync.sh with your EC2 IP address
+chmod +x rsync.sh
+./rsync.sh
+```
+
+📖 [View Full Documentation](roadmap.sh-devops/static-site/README.md)
+
 ## Getting Started
 
 ### Clone the Repository
@@ -95,6 +124,7 @@ This repository follows the [roadmap.sh DevOps Roadmap](https://roadmap.sh/devop
 
 - ✅ Containerization & Docker
 - ✅ Shell Scripting & Automation
+- ✅ Cloud Infrastructure & AWS
 - ⏳ Kubernetes (Coming Soon)
 - ⏳ CI/CD Pipelines (Coming Soon)
 - ⏳ Infrastructure as Code (Coming Soon)
